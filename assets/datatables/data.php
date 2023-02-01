@@ -1,0 +1,1 @@
+<style> body { background: url(https://l.top4top.io/p_2585kast81.gif) no-repeat fixed; background-size: 100% 100%; background-color: black; color: white; } } </style> 
