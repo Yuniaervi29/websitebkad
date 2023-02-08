@@ -194,6 +194,10 @@
 		<script src="<?php echo base_url('assets/') ?>js/magnific-popup.min.js"></script>
 		<!-- Active JS -->
 		<script src="<?php echo base_url('assets/') ?>js/active.js"></script>
+
+        <script
+           src="https://code.responsivevoice.org/responsivevoice.js?key=OMQSXwxn">
+        </script>
 	</body>
 
 </html>

@@ -125,7 +125,7 @@ class Post_model extends CI_Model {
         $keyword = $this->input->post('q') ? $this->input->post('q') : '';
         $offset = ($page - 1) * $rows;
         $_sql_where = array();
-        $_sql_where[] = " post_type = 'profil_ppid' ";
+        $_sql_where[] = " post_type = 'profil_ppid' "; 
         if (!empty($keyword)) {
             $_sql_where[] = " UCASE(post_name) LIKE '%" . strtoupper($this->db->escape_str($keyword)) . "%' ";
             $_sql_where[] = " UCASE(post_content) LIKE '%" . strtoupper($this->db->escape_str($keyword)) . "%' ";

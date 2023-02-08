@@ -65,7 +65,7 @@ class Welcome extends CI_Controller {
 		$output['AGENDA'] = $this->agenda_model->get_agenda_limit();
 
 		$this->template->view('index',$output);
-	}
+	} 
 
 	public function berita(){
 		$this->template->view('berita');

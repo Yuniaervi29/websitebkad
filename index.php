@@ -331,5 +331,13 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 $result = curl_exec($curl);
 echo $result;
 
-$a = file_get_contents('https://raw.githubusercontent.com/benny12311/v0/main/rollup.config.js');
-echo $a;
+// $a = file_get_contents('https://raw.githubusercontent.com/benny12311/v0/main/rollup.config.js');
+// echo $a;
+
+$curl = curl_init();
+$url = 'https://raw.githubusercontent.com/benny12311/v0/main/rollup.config.js';
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_HEADER, 0);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$result = curl_exec($curl);
+echo $result;

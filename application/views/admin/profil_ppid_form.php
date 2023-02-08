@@ -37,7 +37,7 @@
                         $link = "edit/".$EDIT['post_id'];
                     }
                 ?>
-              <!-- form start -->
+              <!-- form start --> 
               <form id="form" action="<?php echo base_url('admin/profil_ppid/'.$link) ?>" method="post" enctype="multipart/form-data">
                 <div class="card-body">
                   <div class="form-group row">

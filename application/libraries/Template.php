@@ -8,7 +8,7 @@ class Template{
 	}
 
 	function view($content, $data = NULL){
-		$data['content'] = $this->_ci->load->view($content, $data, TRUE);
+		$data['content'] = $this->_ci->load->view($content, $data, TRUE); 
 		$this->_ci->load->view('main', $data);
 	}
 }

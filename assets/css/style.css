@@ -190,6 +190,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     position: relative;
     float: none;
     display: inline-block;
+    font-size: 0.8rem;
 }
 .header .nav li:last-child{
 	margin:0;

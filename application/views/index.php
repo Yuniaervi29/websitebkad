@@ -13,14 +13,58 @@
 
 
 
-$url = 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda';
-$json = file_get_contents($url);
-$jo = json_decode($json);
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'GET',
+));
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+
+$jo = curl_exec($curl);
+
+curl_close($curl);
+$jo = json_decode($jo);
+
+
+//$url2 = 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda/realisasi';
+
+
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda/realisasi',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'GET',
+));
+curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+
+$jo2 = curl_exec($curl);
+
+curl_close($curl);
+$jo2 = json_decode($jo2);
+	// $jo = $jo2x['realisasi_pendapatan'];
+
+// $jo = json_decode($json);
 // echo $jo->anggaran_pendapatan;
 
-$url2 = 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda/realisasi';
-$json2 = file_get_contents($url2);
-$jo2 = json_decode($json2);
+// $url2 = 'https://keuangan.sulselprov.go.id/keu_simakda_2022/simakda/index.php/rest_api/api_simakda/realisasi';
+// $json2 = file_get_contents($url2);
+// $jo2 = json_decode($json2);
 
 
 
@@ -1266,5 +1310,3 @@ Highcharts.setOptions({
         <img src="<?=base_url()?>assets/img/Visit-PPID.jpg" width="180px" hight="250px">
     </a>
 </div>
-
-			

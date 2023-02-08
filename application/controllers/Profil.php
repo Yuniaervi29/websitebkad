@@ -9,7 +9,7 @@ class Profil extends CI_Controller
 
 		$this->load->model('master_model');
         $this->load->model('grafik_model');
-        $this->load->model('profil_model');
+        $this->load->model('profil_model'); 
 		$this->load->model('album_model');
 		
 

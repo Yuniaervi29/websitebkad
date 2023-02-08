@@ -155,8 +155,7 @@
 														<div class="menu-home-menu-container" id="myNavbar">
 															<!-- Naviagiton -->
 															<ul id="nav" class="nav main-menu menu navbar-nav">
-																<li ><a href="<?php echo base_url('welcome') ?>" style="text-decoration: none;">HOME</a>
-																	
+																<li ><a href="<?php echo base_url('welcome') ?>" style="text-decoration: none;">HOME</a>	
 																</li>
 																<li class="icon-active"><a href="#profil">PROFIL</a>
 																	<ul class="sub-menu">
